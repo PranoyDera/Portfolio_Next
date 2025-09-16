@@ -1,5 +1,6 @@
 import Home from '@/Components/Home'
 import Navbar from '@/Components/Navbar'
+import Projects from '@/Components/Projects'
 import React from 'react'
 
 function page() {
@@ -7,6 +8,7 @@ function page() {
     <div>
       <Navbar/>
       <Home/>
+      <Projects/>
     </div>
   )
 }

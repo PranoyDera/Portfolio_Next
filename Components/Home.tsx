@@ -5,40 +5,41 @@ import { TypewriterEffectLoop } from "./ui/typewriter-effect";
 const Home: React.FC = () => {
     const words = [
     {
-      text: "Hi",
-      className:"text-white"
+      text: "HI,",
+      className:"text-white text-4xl"
     },
     {
       text: "I",
-      className:"text-white",
+      className:"text-white text-4xl",
     },
     {
-        text:"Am",
-        className:"text-white",
+        text:"AM",
+        className:"text-white text-4xl",
     },
     {
-      text: "Pranoy",
-      className: "text-blue-500 dark:text-blue-500",
+      text: "PRANOY",
+      className: "text-blue-500 dark:text-blue-500 text-4xl",
     },
      {
-      text: "Dera",
-      className: "text-blue-500 dark:text-blue-500",
+      text: "DERA",
+      className: "text-blue-500 dark:text-blue-500 text-4xl",
     },
   ];
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-16 bg-[#0e0e0e] text-white min-h-screen">
+    <>
+    <section className="flex flex-col md:flex-row md:items-center mjustify-between px-0 md:px-20 py-16 bg-[#0e0e0e] text-white min-h-screen">
       
       {/* Left Section - Text */}
-      <div className="max-w-xl space-y-6">
+      <div className="w-full space-y-6 md:flex md:flex-col px-2">
         <div className="flex flex-col gap-6">
         <TypewriterEffectLoop words={words} />
-        <p className="text-gray-400 text-lg ml-12">
+        <p className="text-gray-400 md:text-lg text-sm">
           An Indian front-end developer passionate about building
           accessible and user friendly websites.
         </p>
         </div>
         {/* Buttons */}
-        <div className="flex items-center gap-4 ml-12">
+        <div className="flex items-center gap-4">
           <a
             href="#contact"
             className="bg-lime-400 text-black font-medium px-5 py-2 rounded-full flex items-center gap-2 hover:bg-lime-500 transition"
@@ -74,6 +75,7 @@ const Home: React.FC = () => {
         />
       </div>
     </section>
+    </>
   );
 };
 
