@@ -57,7 +57,7 @@ const Home: React.FC = () => {
           </a>
 
           <a
-            href="https://github.com"
+            href="https://github.com/PranoyDera"
             target="_blank"
             className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition"
           >
