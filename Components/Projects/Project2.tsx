@@ -3,6 +3,8 @@ import { Card } from "../Card";
 import { SiExpress } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
+import { SiMui } from "react-icons/si";
+
 
 function Project2() {
   return (
@@ -26,7 +28,7 @@ function Project2() {
             </h1>
             <p className="text-lg text-gray-300">
               A dynamic and interactive blogging platform built using the MERN
-              stack (MongoDB, Express.js, React, Node.js). The application
+              stack (MongoDB, Express.js, React, Node.js,Material UI). The application
               allows users to create, read, update, and delete blog posts with a
               clean and intuitive interface. It features user authentication,
               comment sections for engagement, and a responsive design for
@@ -51,6 +53,7 @@ function Project2() {
                 <SiExpress className="border-1 rounded-full text-2xl p-1" />
                 <FaReact className="border-1 rounded-full text-2xl p-1" />
                 <SiMongodb className="border-1 rounded-full text-2xl p-1" />
+                <SiMui className="border-1 rounded-full text-2xl p-1" />
               </p>
             </div>
           </div>

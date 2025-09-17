@@ -3,6 +3,8 @@ import { Card } from "../Card";
 import { SiExpress } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+
 
 
 
@@ -10,7 +12,7 @@ function Project1() {
   return (
     <div className="w-full px-5 md:px-20 justify-center items-center">
       {/* Project 1:Pro-Cart */}
-      <div className="flex md:flex-row flex-col justify-between gap-20">
+      <div className="flex md:flex-row flex-col justify-between md:gap-20 gap-5">
         <Card
           image="/Pro-Cart.jpg"
           heading="Pro-Cart"
@@ -28,7 +30,7 @@ function Project1() {
             </h1>
             <p className="text-lg text-gray-300">
               A full-featured e-commerce web application built using the MERN
-              stack (MongoDB, Express.js, Next.js, Node.js). The platform allows
+              stack (MongoDB, Express.js, Next.js, Node.js,tailwind css). The platform allows
               users to browse products, add items to their cart, manage
               addresses, and securely place orders. It includes user
               authentication with JWT, product search, order tracking, and a
@@ -67,6 +69,7 @@ function Project1() {
                 <SiExpress className="border-1 rounded-full text-2xl p-1"/>
                 <SiNextdotjs className="text-2xl"/>
                 <SiMongodb className="border-1 rounded-full text-2xl p-1"/>
+                <RiTailwindCssFill className="border-1 rounded-full text-2xl p-1"/>
               </p>
             </div>
           </div>

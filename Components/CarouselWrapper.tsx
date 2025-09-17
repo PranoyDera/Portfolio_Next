@@ -51,18 +51,18 @@ const CarouselWrapper: React.FC<CarouselWrapperProps> = ({
       </div>
 
       {/* Controls */}
-      <div className="flex gap-4 mt-6">
+      <div className="flex gap-4 mt-2">
         <Button
           onClick={handlePrev}
           variant="outline"
-          className="px-4 py-2 rounded-xl"
+          className="px-4 py-2 rounded-xl cursor-pointer hover:scale-105 transition duration-300"
         >
           ⬅ Prev
         </Button>
         <Button
           onClick={handleNext}
           variant="outline"
-          className="px-4 py-2 rounded-xl"
+          className="px-4 py-2 rounded-xl cursor-pointer hover:scale-105 transition duration-300"
         >
           Next ➡
         </Button>
