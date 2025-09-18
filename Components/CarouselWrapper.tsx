@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Button } from "../Components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
+import { BiLeftArrow, BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 
 type CarouselWrapperProps = {
   components: React.ReactNode[];
@@ -51,20 +52,22 @@ const CarouselWrapper: React.FC<CarouselWrapperProps> = ({
       </div>
 
       {/* Controls */}
-      <div className="flex gap-4 mt-2">
+      <div className="flex gap-8 mt-2">
         <Button
           onClick={handlePrev}
           variant="outline"
           className="px-4 py-2 rounded-xl cursor-pointer hover:scale-105 transition duration-300"
         >
-          ⬅ Prev
+          <BiLeftArrowAlt/>
+          Prev
         </Button>
         <Button
           onClick={handleNext}
           variant="outline"
           className="px-4 py-2 rounded-xl cursor-pointer hover:scale-105 transition duration-300"
         >
-          Next ➡
+          Next
+          <BiRightArrowAlt/>
         </Button>
       </div>
 

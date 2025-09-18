@@ -33,7 +33,7 @@ const Home: React.FC = () => {
       <div className="w-full space-y-6 md:flex md:flex-col px-2">
         <div className="flex flex-col gap-6">
         <TypewriterEffectLoop words={words} />
-        <p className="text-gray-400 md:text-lg text-sm">
+        <p className="text-gray-400 md:text-lg text-sm font-[mono]">
           An Indian front-end developer passionate about building
           accessible and user friendly websites.
         </p>
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
       <div className="mt-10 md:mt-0 md:ml-10">
         <img
           src="/profile.png"
-          alt="Robert Garcia"
+          alt="Profile Photo"
           className="w-80 md:w-[400px] rounded-2xl object-cover"
         />
       </div>

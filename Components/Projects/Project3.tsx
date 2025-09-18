@@ -11,7 +11,7 @@ function Project3() {
           image="/Pro-Text.jpg"
           heading="Pro-Text"
           description="A Text Editor Website"
-          width="md:w-[28rem] w-[350px]"
+          width="md:w-[28rem] w-auto"
           height="md:h-[30rem] h-[500px]"
           link="https://github.com/PranoyDera/pro-blog-react"
           buttonText="Live Demo"
@@ -19,10 +19,10 @@ function Project3() {
         />
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
-            <h1 className="text-white text-2xl font-semibold">
+            <h1 className="text-white text-2xl font-semibold font-[roboto]">
               A Simple Text Editor Website.
             </h1>
-            <p className="text-lg text-gray-300">
+            <p className="text-lg text-gray-300 font-[mono]">
               A simple yet efficient text editor built with React.js, designed
               for writing and editing text directly in the browser. The editor
               provides a clean and distraction-free interface with essential
@@ -33,7 +33,7 @@ function Project3() {
               performance across devices.
             </p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 font-[mono]">
             <h2 className="text-lg font-bold text-gray-300 pb-2 border-b-1 border-gray-400">
               PROJECT INFO
             </h2>

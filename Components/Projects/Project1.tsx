@@ -17,7 +17,7 @@ function Project1() {
           image="/Pro-Cart.jpg"
           heading="Pro-Cart"
           description="A Ecommerce Website"
-          width="md:w-[28rem] w-[350px]"
+          width="md:w-[28rem] w-auto"
           height="md:h-[30rem] h-[500px]"
           link="https://github.com/PranoyDera/Ecommerce-Website"
           buttonText="Live Demo"
@@ -25,10 +25,10 @@ function Project1() {
         />
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
-            <h1 className="text-white text-2xl font-semibold">
+            <h1 className="text-white text-2xl font-semibold font-[roboto]">
               E Commerce Website For Shopping Purposes:
             </h1>
-            <p className="text-lg text-gray-300">
+            <p className="text-lg text-gray-300 font-[mono]">
               A full-featured e-commerce web application built using the MERN
               stack (MongoDB, Express.js, Next.js, Node.js,tailwind css). The platform allows
               users to browse products, add items to their cart, manage
@@ -41,7 +41,7 @@ function Project1() {
               shopping experience.
             </p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 font-[mono]">
             <h2 className="text-lg font-bold text-gray-300 pb-2 border-b-1 border-gray-400">
               PROJECT INFO
             </h2>
