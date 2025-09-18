@@ -10,18 +10,18 @@ function Project2() {
   return (
     <div className="w-full px-5 md:px-20 justify-center items-center">
       {/* Project 1:Pro-Cart */}
-      <div className="flex md:flex-row flex-col justify-between gap-20">
+      <div className="flex md:flex-row flex-col md:justify-between items-center md:gap-20 gap-0 md:h-[600px] h-[1400px]">
         <Card
           image="/Pro-Blog.jpg"
           heading="Pro-Blog"
           description="A Blog Publishing Website"
-          width="md:w-[28rem] w-auto"
-          height="md:h-[30rem] h-auto"
+          width="md:w-[28rem] w-[350px]"
+          height="md:h-[30rem] h-[500px]"
           link="https://github.com/PranoyDera/Ecommerce-Website"
           buttonText="GitHub Link"
           buttonLink="https://github.com/PranoyDera/Ecommerce-Website"
         />
-        <div className="md:mt-20 flex flex-col gap-8">
+        <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <h1 className="text-white text-2xl font-semibold">
               Blog Publishing Website:

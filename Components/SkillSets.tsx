@@ -6,8 +6,8 @@ import React from 'react'
 function SkillSets() {
   return (
     <div className='md:px-12'>
-        <h1 className='text-5xl font-semibold text-gray-300 mt-6'>EXPERTISE:</h1>
-        <div className='md:ml-20 gap-20 justify-center items-center p-10 grid grid-cols-2 md:grid-cols-5'>
+        <h1 className='text-5xl font-bold text-gray-300 mt-6'>EXPERTISE:</h1>
+        <div className='md:ml-20 gap-10 md:gap-20 justify-center items-center p-5 md:p-10 grid grid-cols-3 md:grid-cols-5'>
           <Image
           alt="React"
           src={"/react.png"}
