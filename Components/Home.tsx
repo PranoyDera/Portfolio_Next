@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { TypewriterEffectLoop } from "./ui/typewriter-effect";
+import { Vortex } from "./ui/shadcn-io/vortex";
 
 const Home: React.FC = () => {
     const words = [
@@ -27,7 +28,16 @@ const Home: React.FC = () => {
   ];
   return (
     <>
-    <section className="flex flex-col md:flex-row md:items-center mjustify-between px-0 md:px-20 py-16 bg-[#0e0e0e] text-white min-h-screen">
+    <Vortex
+        backgroundColor="black"
+        particleCount={700}
+        baseHue={220}
+        rangeHue={100}
+        baseSpeed={0.0}
+        rangeSpeed={1.5}
+        className="flex items-center justify-center overflow-x-hidden h-full"
+      >
+    <section className="flex flex-col md:flex-row md:items-center mjustify-between px-0 md:px-20 py-16  text-white min-h-screen">
       
       {/* Left Section - Text */}
       <div className="w-full space-y-6 md:flex md:flex-col px-2">
@@ -75,6 +85,7 @@ const Home: React.FC = () => {
         />
       </div>
     </section>
+    </Vortex>
     </>
   );
 };

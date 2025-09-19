@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { TextHoverEffect } from "./ui/text-hover-effect";
+import Link from "next/link";
 
 function About() {
   return (
@@ -52,8 +53,10 @@ function About() {
           </p>
 
           <div className="flex justify-center lg:justify-start">
-            <Button className="w-[160px] sm:w-[200px] whitespace-nowrap bg-lime-400 hover:bg-lime-600 text-black">
+            <Button className="w-[160px] sm:w-[200px] whitespace-nowrap bg-lime-400 hover:bg-lime-600 text-black cursor-pointer">
+             <Link href={"/About"}>
               MORE ABOUT ME
+             </Link>
             </Button>
           </div>
         </div>
