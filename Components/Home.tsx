@@ -2,6 +2,7 @@ import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { TypewriterEffectLoop } from "./ui/typewriter-effect";
 import { Vortex } from "./ui/shadcn-io/vortex";
+import Image from "next/image";
 
 const Home: React.FC = () => {
     const words = [
@@ -78,11 +79,12 @@ const Home: React.FC = () => {
 
       {/* Right Section - Image */}
       <div className="mt-10 md:mt-0 md:ml-10">
-        <img
-          src="/profile.png"
-          alt="Profile Photo"
-          className="w-80 md:w-[400px] rounded-2xl object-cover"
-        />
+       <Image
+         src="/pic1.png"
+         width={500}
+         height={500}
+         alt={"profile pic"}
+         />
       </div>
     </section>
     </Vortex>
