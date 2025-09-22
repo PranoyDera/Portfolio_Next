@@ -153,11 +153,6 @@ function Page() {
           </div>
         </div>
       </div>
-
-      {/* Placeholder Section */}
-      <div className="text-white py-8 text-center text-sm sm:text-base">
-        Will be added on...
-      </div>
     </section>
   );
 }

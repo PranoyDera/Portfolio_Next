@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { TextHoverEffect } from "./ui/text-hover-effect";
 import Link from "next/link";
+import { GradientText } from "./ui/shadcn-io/gradient-text";
 
 function About() {
   return (
@@ -9,12 +10,7 @@ function About() {
       <div className="flex flex-col lg:flex-row justify-between items-center gap-10 px-6 md:px-12 lg:px-18 py-10">
         {/* Left section */}
         <div className="w-full lg:w-[600px] h-auto lg:h-[650px] flex items-start justify-center lg:justify-start">
-          <TextHoverEffect
-            text="ABOUT ME"
-            height={150}
-            width={400}
-            fontSize="text-5xl"
-          />
+               <GradientText className="text-4xl md:text-6xl font-bold mb-4 md:mt-8 font-[roboto]" text="ABOUT ME" />
         </div>
 
         {/* Right section */}

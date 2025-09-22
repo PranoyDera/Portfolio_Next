@@ -1,18 +1,13 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import { TextHoverEffect } from './ui/text-hover-effect'
+
+
 
 
 function SkillSets() {
   return (
     <div className='md:px-12'>
-         <TextHoverEffect
-                    text="EXPERTISE"
-                    height={150}
-                    width={400}
-                    fontSize="text-5xl"
-                  />
         <div className='md:ml-20 gap-10 md:gap-20 justify-center items-center p-5 md:p-10 grid grid-cols-3 md:grid-cols-5'>
           <Image
           alt="React"

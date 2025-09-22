@@ -3,23 +3,30 @@ import Project1 from "./Projects/Project1";
 import Project2 from "./Projects/Project2";
 import Project3 from "./Projects/Project3";
 import CarouselWrapper from "./CarouselWrapper";
-import { TextHoverEffect } from "./ui/text-hover-effect";
-
-
-
+import { GradientText } from "./ui/shadcn-io/gradient-text";
 
 function Projects() {
   return (
-    <div>
-      <div className="w-full" id="work">
-        <TextHoverEffect
-                text="FEATURED PROJECTS"
-                height={150}
-                width={750}
-                fontSize="text-4xl"
-              />
+    <div className="w-full px-4 md:px-20 py-16" id="work">
+      {/* Heading */}
+      <div className="w-full flex md:justify-start md:items-start justify-center md:mb-12 whitespace-nowrap">
+        <GradientText
+          className="md:text-6xl text-4xl font-bold font-[roboto]"
+          text="FEATURED PROJECTS"
+        />
       </div>
-        <CarouselWrapper components={[<Project1 />, <Project2 />, <Project3 />]} /> 
+
+      {/* Carousel */}
+      <div className="w-full">
+        <CarouselWrapper
+          components={[
+            <Project1 key="project-1" />,
+            <Project2 key="project-2" />,
+            <Project3 key="project-3" />,
+          ]}
+          className="w-full"
+        />
+      </div>
     </div>
   );
 }

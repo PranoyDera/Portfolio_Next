@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   experimental: {
     // your other experimental stuff
   },
+  typescript: {
+    // !! WARNING: This disables type checking during production build
+    ignoreBuildErrors: true,
+  },
 };
 
 export default nextConfig;

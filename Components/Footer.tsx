@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-10 text-white flex flex-col md:flex-row justify-between gap-10">
         {/* Contact Info */}
         <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-bold font-[roboto]">LET'S CONNECT</h1>
+          <h1 className="text-4xl font-bold font-[roboto]">Let&apos;s connect</h1>
           <p>
             Say hello at{" "}
             <span className="border-b-2 border-lime-500 cursor-pointer">
