@@ -79,12 +79,12 @@ const Home: React.FC = () => {
 
       {/* Right Section - Image */}
       <div className="mt-10 md:mt-0 md:ml-10">
-       <Image
+       {/* <Image
          src="/pic1.png"
          width={500}
          height={500}
          alt={"profile pic"}
-         />
+         /> */}
       </div>
     </section>
     </Vortex>

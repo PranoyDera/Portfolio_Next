@@ -1,6 +1,7 @@
 import { Button } from "@/Components/ui/button";
 import { GradientText } from "@/Components/ui/shadcn-io/gradient-text";
 import { FaFileDownload } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 import React from "react";
 import Image from "next/image";
 
@@ -32,17 +33,19 @@ function Page() {
           </p>
 
           {/* Call to Action */}
-          <div className="mt-4">
+          <div className="mt-4 flex gap-2 justify-between md:justify-start">
             <Button
               className="
-                text-base sm:text-lg
+                md:text-lg
+                text-xs
                 inline-flex 
                 rounded-2xl 
                 bg-gradient-to-r 
                 from-green-400 
                 via-cyan-400 
                 to-pink-500 
-                px-6 py-3 
+                md:px-6 px-3
+                md:py-3 py-1
                 font-semibold 
                 text-black 
                 shadow-lg 
@@ -55,8 +58,37 @@ function Page() {
                 gap-2
               "
             >
+              <a href="/PranoyDeraResume.pdf" download={"PranoyDeraResume.pdf"} className="flex gap-2 items-center justify-center">
               DOWNLOAD RESUME
-              <FaFileDownload />
+              <FaFileDownload/>
+              </a>
+            </Button>
+             <Button
+              className="
+                md:text-lg
+                text-xs
+                inline-flex 
+                rounded-2xl 
+                bg-gradient-to-r 
+                from-green-400 
+                via-cyan-400 
+                to-pink-500 
+                md:px-6 px-3 
+                md:py-3 py-1
+                font-semibold 
+                text-black 
+                shadow-lg 
+                hover:scale-105 
+                hover:shadow-pink-500/40 
+                transition-transform 
+                font-roboto
+                gap-2
+              "
+            >
+             <a href="/PranoyDeraResume.pdf" target="_blank" rel="noopener noreferrer " className="flex gap-2 justify-center items-center">
+                 VIEW RESUME
+              <FaEye/>
+              </a>
             </Button>
           </div>
         </div>
