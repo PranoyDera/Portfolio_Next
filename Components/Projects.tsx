@@ -11,7 +11,7 @@ import { TextHoverEffect } from "./ui/text-hover-effect";
 function Projects() {
   return (
     <div>
-      <div className="w-full">
+      <div className="w-full" id="work">
         <TextHoverEffect
                 text="FEATURED PROJECTS"
                 height={150}

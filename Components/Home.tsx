@@ -60,7 +60,7 @@ const Home: React.FC = () => {
           </a>
 
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/pranoy-dera-7b338832b"
             target="_blank"
             className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition"
           >
